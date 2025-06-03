@@ -1,0 +1,610 @@
+.frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  background: #e5e5e5;
+}
+
+.main_frame {
+  margin-top: 2px;
+
+  position: relative;
+  width: 1440px;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+
+  /* background: #f7f6b9; */
+  background: #f0f0f6;
+}
+
+.main_frame .left_frame {
+  position: relative;
+  width: 305px;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  background: white;
+}
+
+.main_frame .mid_frame {
+  position: relative;
+  margin-left: 30px;
+  margin-right: 27px;
+  width: 970px;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.main_frame .mid_frame .hire-me-box {
+  position: relative;
+  margin-left: 10px;
+
+  width: 971px;
+  height: 455px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  background: #fff;
+}
+
+.main_frame .mid_frame .hire-me-box .info-box {
+  position: relative;
+  margin-left: 30px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+
+  width: 500px;
+  height: 380px;
+
+  display: flex;
+  flex-direction: column;
+
+  z-index: 5;
+}
+
+.main_frame .mid_frame .hire-me-box .info-box span {
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 123.6%; /* 59.328px */
+
+  color: #2b2b2b;
+}
+
+.main_frame .mid_frame .hire-me-box .info-box p {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  text-transform: capitalize;
+
+  color: #767676;
+}
+
+.main_frame .mid_frame .hire-me-box .info-box .btn-box {
+  margin-top: 30px;
+
+  width: 155px;
+  height: 50px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+  background-color: #ffb400;
+}
+
+.main_frame .mid_frame .hire-me-box .info-box .btn-box a {
+  margin-right: 5px;
+
+  text-decoration: none;
+  color: #2b2b2b;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+
+  text-transform: uppercase;
+}
+
+.main_frame .mid_frame .hire-me-box .pic-box {
+  z-index: 5;
+}
+
+.main_frame .mid_frame .hire-me-box .pic-box img {
+  margin-right: 60px;
+  margin-top: 15px;
+
+  width: 326px;
+  height: 446px;
+}
+
+.main_frame .mid_frame .hire-me-box .decor-shapes .img1 {
+  position: absolute;
+  z-index: 1;
+
+  top: 20px;
+  left: 20px;
+}
+
+.main_frame .mid_frame .hire-me-box .decor-shapes .img2 {
+  position: absolute;
+  z-index: 1;
+
+  top: 30px;
+  left: 450px;
+}
+
+.main_frame .mid_frame .hire-me-box .decor-shapes .img3 {
+  position: absolute;
+  z-index: 1;
+
+  bottom: 35px;
+  left: 80px;
+}
+
+.main_frame .mid_frame .hire-me-box .decor-shapes .img4 {
+  position: absolute;
+  z-index: 1;
+
+  bottom: 120px;
+  left: 350px;
+}
+
+.main_frame .mid_frame .hire-me-box .decor-shapes .img5 {
+  position: absolute;
+  z-index: 1;
+
+  top: 70px;
+  right: 50px;
+}
+
+.main_frame .mid_frame .hire-me-box .decor-shapes .img6 {
+  position: absolute;
+  z-index: 1;
+
+  top: 200px;
+  right: 400px;
+}
+
+.main_frame .mid_frame .hire-me-box .decor-shapes .img7 {
+  position: absolute;
+  z-index: 1;
+
+  bottom: 50px;
+  right: 60px;
+}
+
+.main_frame .mid_frame .service-text {
+  margin-top: 150px;
+
+  width: 450px;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.main_frame .mid_frame .service-text span {
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 123.6%; /* 39.552px */
+  text-transform: capitalize;
+
+  color: #2b2b2b;
+}
+
+.main_frame .mid_frame .service-text p {
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  text-transform: capitalize;
+
+  color: #767676;
+}
+
+.main_frame .mid_frame .service-box {
+  margin-top: 50px;
+
+  width: 970px;
+  height: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.main_frame .mid_frame .service-box .service-box1 {
+  width: 310px;
+  height: 225px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: #fff;
+}
+
+.main_frame .mid_frame .service-box .service-box1 span {
+  margin-top: 25px;
+
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 123.6%; /* 22.248px */
+  text-transform: capitalize;
+
+  color: #2b2b2b;
+}
+
+.main_frame .mid_frame .service-box .service-box1 p {
+  margin-top: 7px;
+
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  text-transform: capitalize;
+
+  color: #767676;
+
+  text-align: center;
+}
+
+.main_frame .mid_frame .service-box .service-box1 a {
+  text-decoration: none;
+
+  color: #ffb400;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  text-transform: uppercase;
+}
+
+.main_frame .right_frame {
+  position: relative;
+  width: 108px;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: white;
+}
+
+.main_frame .right_frame button {
+  margin-top: 20px;
+  margin-bottom: 250px;
+
+  border: none;
+  cursor: pointer;
+}
+.main_frame .right_frame .side-menu-box {
+  margin-bottom: 50px;
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #eaeaea;
+  border-radius: 50%;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+.main_frame .right_frame .side-menu-box:hover {
+  background-color: #ffb400;
+}
+
+.main_frame .right_frame .side-menu-box a {
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_frame .left_frame .left_1 {
+  position: relative;
+  margin-top: 50px;
+  margin-left: 37px;
+
+  width: 228px;
+  height: 267px;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.main_frame .left_frame .left_1 .left_1_1 {
+  position: relative;
+  margin-bottom: 29px;
+
+  width: 156px;
+  height: 143px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_frame .left_frame .left_1 .left_1_1 img {
+  width: 156px;
+  height: 142px;
+  border-radius: 50%;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.main_frame .left_frame .left_1 .left_1_2 {
+  position: relative;
+  margin-bottom: 7px;
+
+  width: 67px;
+  height: 21px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 123%;
+
+  color: #2b2b2b;
+}
+
+.main_frame .left_frame .left_1 .left_1_3 {
+  position: relative;
+
+  width: 147px;
+  height: 26px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+
+  text-transform: capitalize;
+  font-feature-settings: "calt" off, "kern" off;
+
+  color: #767676;
+}
+
+.main_frame .left_frame .left_1 .left_icons {
+  position: relative;
+  margin-top: 20px;
+
+  width: 100%;
+  height: 40px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main_frame .left_frame .left_1 .left_icons a {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  background-color: #f7f6b9;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  text-decoration: none;
+}
+
+.main_frame .left_frame .marginer {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 39px;
+  margin-bottom: 25px;
+
+  width: 220px;
+  height: 0px;
+
+  border: 1.5px solid #f0f0f6;
+}
+
+.main_frame .left_frame .left_2 {
+  position: relative;
+  margin-left: 44px;
+
+  width: 221px;
+  height: 126px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.main_frame .left_frame .left_2 .user-info {
+  position: relative;
+  margin-bottom: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main_frame .left_frame .left_2 .user-info .user {
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  text-transform: capitalize;
+
+  background: #ffb400;
+  color: #2b2b2b;
+}
+
+.main_frame .left_frame .left_2 .user-info .info {
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  text-transform: capitalize;
+  color: #2b2b2b;
+}
+
+.main_frame .left_frame .left_2 .user-info .info-change {
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  text-transform: capitalize;
+
+  color: #7eb942;
+}
+
+.main_frame .left_frame .left_3 {
+  position: relative;
+  margin-left: 45px;
+  margin-top: 25px;
+
+  width: 220px;
+  height: 153px;
+
+  display: flex;
+  flex-direction: column;
+}
+/* i didnt input left_3 text here coz i wanted to use these information in left_4 too */
+.main_frame .left_frame span {
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 123.6%; /* 22.248px */
+  text-transform: capitalize;
+
+  color: #2b2b2b;
+}
+/* i didnt input left_3 text here coz i wanted to use these information in left_4 too */
+.main_frame .left_frame .lan-skill {
+  margin-top: 10px;
+  /* margin-bottom: 10px; */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* i didnt input left_3 text here coz i wanted to use these information in left_4 too */
+.main_frame .left_frame .lan-skill span {
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  text-transform: capitalize;
+
+  color: #767676;
+}
+/* i didnt input left_3 text here after .left_frame coz i wanted to use these information in left_4 too */
+.main_frame .left_frame .progress-bar {
+  margin-bottom: 8px;
+
+  width: 220px;
+  height: 4px;
+  flex-shrink: 0;
+}
+
+.main_frame .left_frame .left_4 {
+  position: relative;
+  margin-left: 45px;
+  margin-top: 25px;
+
+  width: 220px;
+  height: 252px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.main_frame .left_frame .left_5 {
+  position: relative;
+  margin-left: 45px;
+  margin-top: 25px;
+
+  width: 186px;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.main_frame .left_frame .left_5 .skill-box {
+  margin-top: 10px;
+  /* margin-bottom: 10px; */
+
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+}
+
+.main_frame .left_frame .left_5 .skill-box span {
+  margin-left: 10px;
+
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  text-transform: capitalize;
+
+  color: #767676;
+}
