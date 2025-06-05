@@ -162,6 +162,7 @@ run();
 // agarda berilgan qiymatlar ketmaketligi 20 70 va 40 bolsa bu holatda srazi 20ni qiymatini chiqarib 70ni esa 5 sekund kutadi va 70 bn 40 qiymatni birdaniga chiqarib beradi
 */
 
+/*
 //CALL BACK VS SETINTERVAL
 console.log("Jack Ma advice");
 const list = [
@@ -196,4 +197,51 @@ giveAdvice(70, (err, data) => {
 });
 console.log("passed here 1");
 
-// bu holatda biz callback functionda setintervalni ishlatib kordik va natijada javobni qayta qayta chiqarib beraveradi har 1 sekundda albatta console.log("passed here 1") va console.log("passed here 0") dan keyin
+// bu holatda biz callback functionda setintervalni ishlatib kordik va natijada javobni qayta qayta chiqarib beraveradi har 1 sekundda albatta console.log("passed here 1") va console.log("passed here 0") dan keyin 
+*/
+
+// MIT Task A
+
+// version 1
+// let word = "engineer";
+// let letter = "e";
+// let count = 0;
+// let i = 0;
+
+// while(i < word.length){
+//   if(word[i] === letter){
+//    count++;
+//   }
+// i++;
+// }
+
+// console.log(count);
+
+// version 2
+// let word = "engineer";
+// let letter = "e";
+// let count = 0;
+
+// for (let i = 0; i < word.length; i++) {
+//   if (word[i] === letter) {
+//     count++;
+//   }
+// }
+
+// console.log(count);
+
+//version 3
+
+function countLetter(letter, word) {
+  let count = 0;
+
+  for (let i = 0; i < word.length; i++) {
+    if (word[i] === letter) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+console.log(countLetter("e", "engineer"));
