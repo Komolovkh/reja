@@ -232,16 +232,30 @@ console.log("passed here 1");
 
 //version 3
 
-function countLetter(letter, word) {
-  let count = 0;
+// function countLetter(letter, word) {
+//   let count = 0;
 
-  for (let i = 0; i < word.length; i++) {
-    if (word[i] === letter) {
-      count++;
+//   for (let i = 0; i < word.length; i++) {
+//     if (word[i] === letter) {
+//       count++;
+//     }
+//   }
+
+//   return count;
+// }
+// console.log(countLetter("e", "engineer"));
+
+// MIT Task B
+
+function countDigits(number) {
+  let digit = 0;
+
+  for (let i = 0; i < number.length; i++) {
+    if (number[i] >= "0" && number[i] <= "9") {
+      digit++;
     }
   }
 
-  return count;
+  return digit;
 }
-
-console.log(countLetter("e", "engineer"));
+console.log(countDigits("ad2a54y79wet0sfgb9"));
