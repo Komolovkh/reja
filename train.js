@@ -280,6 +280,7 @@ console.log("passed here 1");
 // shop.sotish("non", 3); & shop.qabul("cola", 4); & shop.qoldiq();
 // Natija qaytishi kerak: Hozir 20:50da 1ta non, 5ta lag'mon va 6ta cola mavjud!
 
+// TASK - C
 const moment = require("moment");
 
 class Shop {
@@ -289,13 +290,13 @@ class Shop {
     this.cola = cola;
   }
 
-  getTime() {
+  time() {
     return moment().format("HH:mm");
   }
 
   qoldiq() {
     console.log(
-      `Hozir ${this.getTime()} da ${this.non} ta non, ${
+      `Hozir ${this.time()} da ${this.non} ta non, ${
         this.lagmon
       } ta lag'mon va ${this.cola} ta cola mavjud`
     );
@@ -305,28 +306,27 @@ class Shop {
     if (this[mahsulot] !== undefined) {
       this[mahsulot] -= miqdor;
       if (this[mahsulot] < 0) this[mahsulot] = 0;
-      console.log(`${this.getTime()} - Sotildi: ${miqdor} ta ${mahsulot}`);
+      console.log(`${this.time()} - Sotildi: ${miqdor} ta ${mahsulot}`);
     } else {
-      console.log(`${this.getTime()} - Bunday mahsulot yo'q: ${mahsulot}`);
+      console.log(`${this.time()} - Bunday mahsulot yo'q: ${mahsulot}`);
     }
   }
 
   qabul(mahsulot, miqdor) {
     if (this[mahsulot] !== undefined) {
       this[mahsulot] += miqdor;
-      console.log(
-        `${this.getTime()} - Qabul qilindi: ${miqdor} ta ${mahsulot}`
-      );
+      console.log(`${this.time()} - Qabul qilindi: ${miqdor} ta ${mahsulot}`);
     } else {
-      console.log(`${this.getTime()} - Bunday mahsulot yo'q: ${mahsulot}`);
+      console.log(`${this.time()} - Bunday mahsulot yo'q: ${mahsulot}`);
     }
   }
 }
 
-// Sinov:
 const dokon = new Shop(4, 5, 2);
 
 dokon.qoldiq();
 dokon.sotish("non", 3);
 dokon.qabul("cola", 4);
 dokon.qoldiq();
+
+//azgina chatpgtdan foydalandim classni qolip va tuzilishi uchun lekin 70% kodlarni uzim qildim
