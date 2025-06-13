@@ -247,15 +247,86 @@ console.log("passed here 1");
 
 // MIT Task B
 
-function countDigits(number) {
-  let digit = 0;
+// function countDigits(number) {
+//   let digit = 0;
 
-  for (let i = 0; i < number.length; i++) {
-    if (number[i] >= "0" && number[i] <= "9") {
-      digit++;
+//   for (let i = 0; i < number.length; i++) {
+//     if (number[i] >= "0" && number[i] <= "9") {
+//       digit++;
+//     }
+//   }
+
+//   return digit;
+// }
+// console.log(countDigits("ad2a54y79wet0sfgb9"));
+
+// TASK - C
+
+// Shop nomli class tuzing, va bu class 3 xill parametr qabul qilsin.
+// Hamda classning quyidagdek 3'ta metodi bo'lsin:
+
+// 1) qoldiq
+// 2) sotish
+// 3) qabul
+
+// Har bir metod ishga tushgan vaqtda log qilinsin
+
+// MASALAN:
+// const shop = new Shop(4, 5, 2)
+
+// shop.qoldiq();
+// natija qaytishi kerak: Hozir 20: 40'da 4'ta non, 5'ta lag'mon va 2'ta cola mavjud
+
+// shop.sotish("non", 3); & shop.qabul("cola", 4); & shop.qoldiq();
+// Natija qaytishi kerak: Hozir 20:50da 1ta non, 5ta lag'mon va 6ta cola mavjud!
+
+const moment = require("moment");
+
+class Shop {
+  constructor(non, lagmon, cola) {
+    this.non = non;
+    this.lagmon = lagmon;
+    this.cola = cola;
+  }
+
+  getTime() {
+    return moment().format("HH:mm");
+  }
+
+  qoldiq() {
+    console.log(
+      `Hozir ${this.getTime()} da ${this.non} ta non, ${
+        this.lagmon
+      } ta lag'mon va ${this.cola} ta cola mavjud`
+    );
+  }
+
+  sotish(mahsulot, miqdor) {
+    if (this[mahsulot] !== undefined) {
+      this[mahsulot] -= miqdor;
+      if (this[mahsulot] < 0) this[mahsulot] = 0;
+      console.log(`${this.getTime()} - Sotildi: ${miqdor} ta ${mahsulot}`);
+    } else {
+      console.log(`${this.getTime()} - Bunday mahsulot yo'q: ${mahsulot}`);
     }
   }
 
-  return digit;
+  qabul(mahsulot, miqdor) {
+    if (this[mahsulot] !== undefined) {
+      this[mahsulot] += miqdor;
+      console.log(
+        `${this.getTime()} - Qabul qilindi: ${miqdor} ta ${mahsulot}`
+      );
+    } else {
+      console.log(`${this.getTime()} - Bunday mahsulot yo'q: ${mahsulot}`);
+    }
+  }
 }
-console.log(countDigits("ad2a54y79wet0sfgb9"));
+
+// Sinov:
+const dokon = new Shop(4, 5, 2);
+
+dokon.qoldiq();
+dokon.sotish("non", 3);
+dokon.qabul("cola", 4);
+dokon.qoldiq();
