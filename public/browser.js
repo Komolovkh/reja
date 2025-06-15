@@ -31,7 +31,7 @@ let createField = document.getElementById("create-field");
 
 //hozir biz buyerda reja.ejs fayldagi formni shu js faylga chaqirib olish uchun quyidagi amalni bajaryapmiz
 document.getElementById("create-form").addEventListener("submit", function (e) {
-  e.preventDefault(); // boshqa sahifaga otib ketmasligi uchun shu kodni kiritdik
+  e.preventDefault(); // boshqa sahifaga otib ketmasligi uchun shu kodni kiritdik yani traditional apini tosish uchun
   axios //modern request
     .post("/create-item", { reja: createField.value })
     .then((response) => {

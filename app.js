@@ -16,18 +16,25 @@ fs.readFile("database/user.json", "utf8", (err, data) => {
 
 //Mongodb connect
 
-const db = require("./server").db();
+const db = require("./server").db(); //buyerda esa biz server jsdan dbni export qildik
+// const client = require("./server").db();
+// const db = client.db(); qilishimiz ham mumkin
+// reja => crud => create read update delete
 const mongodb = require("mongodb");
 
 // 1 kirish codelari
-app.use(express.static("public"));
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.static("public")); //buyerda backenddagi fayllarni apilar orqali frontendga yuborish uchun foydalanamiz // middleware dp
+app.use(express.json()); // middleware dp => rest api
+app.use(express.urlencoded({ extended: true })); // middleware dp => traditional api
 
 // 2: session code
 // 3 views code
-app.set("views", "views");
-app.set("view engine", "ejs");
+app.set("views", "views"); // views folderida ishlayotganimizi korsatadi
+app.set("view engine", "ejs"); // bu esa frontendda ejs fayllarini ishlayotganimizi korsatadi
+
+// BSSR >>> backend server side rendering => backendda HTML ni tayyorlab, frontendga yuboradi
+// CSR  >>> client side rendering => backend faqat JS fayllarni yuboradi, frontend JS bilan render qiladi
+// SPA  >>> single page application => frontendda bitta sahifa yuklanadi, qolgani JS orqali dinamik o'zgaradi
 
 // 4 routing code
 
@@ -93,3 +100,11 @@ app.get("/", function (req, res) {
 });
 
 module.exports = app;
+
+// API types >>>>>Traditional API(request response) REST API, GraphQL API, WebSocket API, gRPC, GraphQL, gRPC, JSON-RPC, XML-RPC, HTTP API, etc
+
+// API methods >>>>>GET, POST, PUT, DELETE
+
+// API sturctures >>>>>> header >> authorization, content-type
+//                       body  >> data>>> json, xml, html, etc
+//                       query parametrs >>>> additional options
