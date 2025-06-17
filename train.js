@@ -333,17 +333,30 @@ console.log("passed here 1");
 
 //MIT task D
 
-function checkContent(pr1, pr2) {
-  if (pr1.length !== pr2.length) {
-    return false;
-  }
-  const tr1 = pr1.split("").sort().join("");
-  const tr2 = pr2.split("").sort().join("");
+// function checkContent(pr1, pr2) {
+//   if (pr1.length !== pr2.length) {
+//     return false;
+//   }
+//   const tr1 = pr1.split("").sort().join("");
+//   const tr2 = pr2.split("").sort().join("");
 
-  if (tr1 === tr2) {
-    return true;
-  } else {
-    return false;
-  }
+//   if (tr1 === tr2) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(checkContent("hello", "hlloe"));
+
+//MIT task E
+
+function getReverse(word) {
+  const wordd = word.split("").reverse().join("");
+  return wordd;
+
+  //or
+
+  return word.split("").reverse().join("");
 }
-console.log(checkContent("hello", "hlloe"));
+
+console.log(getReverse("lucas"));
