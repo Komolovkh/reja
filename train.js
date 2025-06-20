@@ -350,13 +350,27 @@ console.log("passed here 1");
 
 //MIT task E
 
-function getReverse(word) {
-  const wordd = word.split("").reverse().join("");
-  return wordd;
+// function getReverse(word) {
+//   const wordd = word.split("").reverse().join("");
+//   return wordd;
 
-  //or
+//   //or
 
-  return word.split("").reverse().join("");
+//   return word.split("").reverse().join("");
+// }
+
+// console.log(getReverse("lucas"));
+
+//MIT task F
+
+function findDoublers(word) {
+  for (let i = 0; i < word.length; i++) {
+    for (let j = i + 1; j < word.length; j++) {
+      if (word[i] === word[j]) {
+        return true;
+      }
+    }
+  }
+  return false;
 }
-
-console.log(getReverse("lucas"));
+console.log(findDoublers("small"));
